@@ -4,8 +4,8 @@ import cv2
 import sys
 import os
 from ctypes import *
-from sample_point import get_point, sample_plane, sample_bag
-
+from sample_point import get_point, sample_plane
+# 
 showsz = 800
 mousex, mousey = 0.5, 0.5
 zoom = 1.0
@@ -32,7 +32,7 @@ cv2.setMouseCallback('show3d', onmouse)
 # gcc -shared -o mydll.dll dll.o -Wl,--out-implib,libmessage.a
 
 plane_points = get_point(sample_plane)
-bag_points = get_point(sample_bag)
+# bag_points = get_point(sample_bag)
 
 dll = CDLL('./render_balls_so.dll')
 
