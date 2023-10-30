@@ -1,0 +1,26 @@
+https://github.com/fxia22/pointnet.pytorch
+Downloaded dataset by the given commands
+Then I fixed some errors in the code, and trained the model using the commands given, the results are given below
+
+Training 1 :
+  -> Type - classification
+  -> Dataset - shapenet
+  -> Epochs - 2
+  -> len(dataset) = 12137
+  -> len(test dataset) = 2874
+  -> Final Accuracy (of test dataset) - 0.928
+
+Testing 1 :
+  -> Model - the model trained above was used (cls_model_1.pth)
+  -> Dataset - shapenet
+  -> Number of points tested on = len(test dataset)
+  -> Final Accuracy - 0.927 (obviously same as above)
+
+Training 2 :
+  -> Type - segmentation
+  -> Dataset - shapenet
+  -> Epochs - 2
+  -> len(dataset) = 2658
+  -> len(test dataset) = 704
+  -> Number of segmentation classes = 4
+  -> Final Mean IoU for Chair (of test dataset) - 0.602
